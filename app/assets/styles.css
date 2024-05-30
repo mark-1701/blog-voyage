@@ -92,6 +92,21 @@ img {
   margin-bottom: 2rem;
 }
 
+.user-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.user-image-profile {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  margin-bottom: 5rem;
+}
+
 
 /* ****************************** HEADER ************************************** */
 
@@ -230,6 +245,10 @@ img {
   .close-btn-modal {
     top: 1rem;
     right: 1rem;
+  }
+
+  .user-form {
+    grid-template-columns: 1fr;
   }
 }
 

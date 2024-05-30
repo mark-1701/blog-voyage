@@ -1,10 +1,11 @@
 export function PostCard({ id, title, image_uri, shortMessage }) {
+  const image_not_found = 'https://static.vecteezy.com/system/resources/previews/005/337/799/non_2x/icon-image-not-found-free-vector.jpg';
   const $postCard = document.createElement('div');
   $postCard.classList.add('post-card');
   const $image = document.createElement('img');
   $image.alt = 'imagen...';
-  $image.addEventListener('error', () => ($image.src = 'http://127.0.0.1:5501/app/assets/img/image_not_found.jpg'));
-  $image.src = image_uri || 'http://127.0.0.1:5501/app/assets/img/image_not_found.jpg';
+  $image.addEventListener('error', () => ($image.src = image_not_found));
+  $image.src = image_uri || image_not_found;
 
   const $title = document.createElement('h2');
   $title.textContent = title;
@@ -27,9 +28,9 @@ export function PostCard({ id, title, image_uri, shortMessage }) {
 //   $postCard.classList.add('post-card');
 //   const $image = document.createElement('img');
 //   $image.alt = 'imagen...';
-//   $image.src = image_uri || 'http://127.0.0.1:5501/app/assets/img/image_not_found.jpg';
+//   $image.src = image_uri || 'https://static.vecteezy.com/system/resources/previews/005/337/799/non_2x/icon-image-not-found-free-vector.jpg';
 //   $image.addEventListener('error', () => {
-//     $image.src = 'http://127.0.0.1:5501/app/assets/img/image_not_found.jpg';
+//     $image.src = 'https://static.vecteezy.com/system/resources/previews/005/337/799/non_2x/icon-image-not-found-free-vector.jpg';
 //   });
 
 //   $postCard.innerHTML = `

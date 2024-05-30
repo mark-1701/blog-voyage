@@ -4,7 +4,7 @@ export function Post({ id, title, content, author, image_uri }) {
   $main.innerHTML = `
     <h1>${title}</h1>
     ${content}<br><br>
-    <img src="${image_uri}" alt="sin foto..." class="image-post"><br><br>
+    <img src="${image_uri}" alt="" class="image-post"><br><br>
     <p><strong>Autor: </strong>${author}</p>
   `;
   return $post;
