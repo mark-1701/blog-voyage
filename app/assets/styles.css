@@ -217,16 +217,25 @@ img {
 }
 
 @media (max-width: 600px) {
+
+  .header {
+    flex-direction: row-reverse;
+  }
+
+  .main {
+    margin-right: 4rem;
+  }
+
   .sidebar {
     position: fixed;
     top: 4rem;
-    left: 0;
-    width: 80%;
+    right: 0;
+    width: 4rem;
     height: 100%;
   }
 
   .sidebar-disabled {
-    width: 0;
+    width: 40%;
   }
 
   .posts {
